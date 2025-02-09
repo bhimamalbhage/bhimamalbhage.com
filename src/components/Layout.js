@@ -24,9 +24,12 @@ const Layout = ({ children }) => {
         </div>
 
         <div className="flex items-center gap-4">
-           <FontAwesomeIcon icon={faGithub} className="w-5 h-5"/>
-           <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5"/>
-           <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5"/>
+          <a href="https://github.com/bhimamalbhage" target="_blank" rel="noreferrer">           
+          <FontAwesomeIcon icon={faGithub} className="w-5 h-5"/></a>
+          <a href="https://www.linkedin.com/in/bmalbhage" target="_blank" rel="noreferrer">           
+          <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5"/></a>
+          <a href="mailto:bhimamalbhage1008@gmail.com">       
+          <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5"/></a>
         </div>
       </nav>
 
