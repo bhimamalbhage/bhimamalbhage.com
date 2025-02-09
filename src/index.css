@@ -1,0 +1,57 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: 'iAWriterQuattroS';
+  src: url('./assets/fonts/iAWriterQuattroS-Regular.woff2') format('woff2'),
+       url('./assets/fonts/iAWriterQuattroS-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'iAWriterQuattroS';
+  src: url('./assets/fonts/iAWriterQuattroS-Bold.woff2') format('woff2'),
+       url('./assets/fonts/iAWriterQuattroS-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'iAWriterQuattroS';
+  src: url('./assets/fonts/iAWriterQuattroS-Italic.woff2') format('woff2'),
+       url('./assets/fonts/iAWriterQuattroS-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'iAWriterQuattroS';
+  src: url('./assets/fonts/iAWriterQuattroS-BoldItalic.woff2') format('woff2'),
+       url('./assets/fonts/iAWriterQuattroS-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  font-family: 'iAWriterQuattroS', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  /* background-color: black;
+  color: white; */
+}
+
+h1, h2, h3 {
+  font-family: 'iAWriterQuattroS', sans-serif;
+  font-weight: bold;
+}
+
+p{
+  font-family: 'iAWriterQuattroS', sans-serif;
+  font-weight: normal;
+}
