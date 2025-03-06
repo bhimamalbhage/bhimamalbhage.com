@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Github, Linkedin, Mail, Home, Briefcase, User, Code } from 'lucide-react';
+import { Github, Linkedin, Home, Briefcase, User, Code } from 'lucide-react';
 
 const Layout = ({ children }) => {
   const location = useLocation();
