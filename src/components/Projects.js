@@ -5,7 +5,9 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import AiAssistant from "../assets/images/ai-assistant.png";
 import myFlix from "../assets/images/myFlix.png";
 import Traffic from "../assets/images/traffic.png";
-import eventManagement from "../assets/images/event-management.jpg";
+// import eventManagement from "../assets/images/event-management.jpg";
+import ProjectPilot from "../assets/images/project-pilot-ss.png";
+import myfinfolio from '../assets/images/MyFinFolio.png'
 
 const projects = [
   {
@@ -20,15 +22,27 @@ const projects = [
     websiteLink: 'https://myflix-bhima.netlify.app/',
   },
   {
+    title: "ProjectPilot - A project management application",
+    image: ProjectPilot,
+    githubLink: "https://github.com/bhimamalbhage/Project-Management-Tool",
+    websiteLink: 'https://project-pilot-bm.netlify.app/',
+  },
+  {
+    title: "MyFinFolio - Kanban-style responsive project management application ",
+    image: myfinfolio,
+    githubLink: "https://github.com/bhimamalbhage/myfinfolio",
+    websiteLink: 'https://myfinfolio.vercel.app/',
+  },
+  {
     title: "Scalable traffic data sensing systems using AI",
     image: Traffic,
     githubLink: "https://github.com/bhimamalbhage/Traffic-Data-Collection",
   },
-  {
-    title: "Multilingual Event Management",
-    image: eventManagement,
-    githubLink: "https://github.com/bhimamalbhage/event",
-  },
+  // {
+  //   title: "Multilingual Event Management",
+  //   image: eventManagement,
+  //   githubLink: "https://github.com/bhimamalbhage/event",
+  // },
 ];
 
 const Project = () => {
