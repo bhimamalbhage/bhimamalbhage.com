@@ -1,42 +1,88 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-// import logo from "../assets/images/anime-profile.ico";
-import logo from "../assets/images/profile2.ico";
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Github, Linkedin, Mail, Home, Briefcase, User, Code } from 'lucide-react';
 
 const Layout = ({ children }) => {
+  const location = useLocation();
+  
+  // Function to check if a path is active
+  const isActive = (path) => {
+    if (path === '/' && location.pathname === '/') return true;
+    if (path !== '/' && location.pathname.startsWith(path)) return true;
+    return false;
+  };
+
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <nav className="navbar flex items-center justify-between mb-16">
-        <div className="flex items-center gap-2">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+      {/* Navigation Sidebar */}
+      <nav className="fixed left-0 top-0 h-screen w-20 md:w-64 bg-black bg-opacity-20 backdrop-blur-sm z-50">
+        <div className="flex flex-col items-center md:items-start p-6 space-y-8">
+          <Link to="/" className="flex items-center space-x-3">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center">
+              <span className="text-xl font-bold">B</span>
+            </div>
+            <span className="hidden md:block text-xl font-bold">Bhima</span>
+          </Link>
+          
+          <div className="w-full space-y-4">
+            <Link 
+              to="/" 
+              className={`w-full flex items-center space-x-3 p-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all ${isActive('/') ? 'bg-white bg-opacity-10' : ''}`}
+            >
+              <Home className="w-5 h-5 mx-auto md:mx-0" />
+              <span className="hidden md:block">Home</span>
+            </Link>
+            <Link 
+              to="/projects" 
+              className={`w-full flex items-center space-x-3 p-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all ${isActive('/projects') ? 'bg-white bg-opacity-10' : ''}`}
+            >
+              <Briefcase className="w-5 h-5 mx-auto md:mx-0" />
+              <span className="hidden md:block">Projects</span>
+            </Link>
+            <Link 
+              to="/about" 
+              className={`w-full flex items-center space-x-3 p-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all ${isActive('/about') ? 'bg-white bg-opacity-10' : ''}`}
+            >
+              <User className="w-5 h-5 mx-auto md:mx-0" />
+              <span className="hidden md:block">About Me</span>
+            </Link>
+            <Link 
+              to="/skills" 
+              className={`w-full flex items-center space-x-3 p-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all ${isActive('/skills') ? 'bg-white bg-opacity-10' : ''}`}
+            >
+              <Code className="w-5 h-5 mx-auto md:mx-0" />
+              <span className="hidden md:block">Skills</span>
+            </Link>
+            {/* <Link 
+              to="/contact" 
+              className={`w-full flex items-center space-x-3 p-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all ${isActive('/contact') ? 'bg-white bg-opacity-10' : ''}`}
+            >
+              <MessageSquare className="w-5 h-5 mx-auto md:mx-0" />
+              <span className="hidden md:block">Contact</span>
+            </Link> */}
+          </div>
 
-        <Link to="/"> <img src={logo} alt="logo" className="w-10 h-10 rounded-lg" /></Link>
-        <Link to="/"><span className="text-xl font-semibold">Bhima</span> </Link>
-        
-        </div>
-
-        <div className="flex items-center gap-6">
-            {/* 🏠 📝 📞 📜📄*/}
-          <Link to="/" className="hover:text-gray-600">🏠 Home</Link>
-          <Link to="/projects" className="hover:text-gray-600">🛠 Projects</Link>
-          <Link to="/about" className="hover:text-gray-600">📝 About Me</Link>
-          {/* <Link to="/contact" className="hover:text-gray-600">📞 Contact</Link> */}
-          <Link to="https://drive.google.com/file/d/1sm-dftwm0GISAxfYPvRIsK8F9CS_CyRr/view?usp=sharing" target="_blank" className="hover:text-gray-600">📄 Resume</Link>
-        </div>
-
-        <div className="flex items-center gap-4">
-          <a href="https://github.com/bhimamalbhage" target="_blank" rel="noreferrer">           
-          <FontAwesomeIcon icon={faGithub} className="w-5 h-5"/></a>
-          <a href="https://www.linkedin.com/in/bmalbhage" target="_blank" rel="noreferrer">           
-          <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5"/></a>
-          <a href="mailto:bhimamalbhage1008@gmail.com">       
-          <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5"/></a>
+          <div className="mt-auto w-full space-y-4">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="w-full flex items-center space-x-3 p-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+              <Github className="w-5 h-5 mx-auto md:mx-0" />
+              <span className="hidden md:block">GitHub</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-full flex items-center space-x-3 p-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+              <Linkedin className="w-5 h-5 mx-auto md:mx-0" />
+              <span className="hidden md:block">LinkedIn</span>
+            </a>
+            {/* <a href="mailto:bhimamalbhage1008@gmail.com" className="w-full flex items-center space-x-3 p-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+              <Mail className="w-5 h-5 mx-auto md:mx-0" />
+              <span className="hidden md:block">Email</span>
+            </a> */}
+          </div>
         </div>
       </nav>
 
-      <div>{children}</div>
+      {/* Main Content */}
+      <main className="ml-20 md:ml-64 p-8">
+        {children}
+      </main>
     </div>
   );
 };
