@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { Github, ExternalLink, Star, GitBranch, ArrowLeft, Code } from 'lucide-react';
+import { Github, ExternalLink, ArrowLeft, Code } from 'lucide-react';
 import AiAssistant from "../assets/images/ai-assistant.png";
 import myFlix from "../assets/images/myFlix.png";
 import Traffic from "../assets/images/traffic.png";
