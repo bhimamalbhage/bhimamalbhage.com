@@ -62,7 +62,8 @@ const Portfolio = () => {
             </p>
             <p className="text-lg text-gray-400">
               🎯 Specialized in <span className="text-red-400">React</span>,{" "}
-              <span className="text-yellow-400">JavaScript</span> and{" "}
+              <span className="text-yellow-400">JavaScript</span>,{" "}
+              <span className="text-purple-400">Python</span> and{" "}
               <span className="text-green-400">Node.js</span>
             </p>
             <p className="text-lg text-gray-400">
