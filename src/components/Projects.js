@@ -7,6 +7,8 @@ import Traffic from "../assets/images/traffic.png";
 // import eventManagement from "../assets/images/event-management.jpg";
 import ProjectPilot from "../assets/images/project-pilot-ss.png";
 import myfinfolio from '../assets/images/MyFinFolio.png'
+import eventMap from '../assets/images/event-map.png'
+
 
 const ProjectsPage = () => {
   const navigate = useNavigate();
@@ -24,6 +26,23 @@ const ProjectsPage = () => {
         AiAssistant,
       ],
       github: "https://github.com/bhimamalbhage/AI-Assistant-for-university",
+      // demo: "",
+      // stats: {
+      //   stars: 145,
+      //   forks: 48
+      // }
+    },
+    {
+      id: "Eventify",
+      title: "Eventify - Find events near you",
+      description: "A web app that displays events based on user’s location, integrating multiple event APIs into an interactive map. Implemented dynamic filtering for event sources and categories to enhance personalization. Designed a seamless UI with React and optimized backend data collection with Python.",
+      longDescription: "Eventify is a web application designed to help users discover live events happening near them. By integrating multiple event APIs, it fetches real-time event data and visualizes it on an interactive map, making event discovery seamless and engaging. The app features dynamic filtering options, allowing users to customize their event search based on sources, categories, and personal preferences.",
+      tags: ["React", "Python", "FastAPI"],
+      imageUrls: [
+        eventMap,
+      ],
+      github: "",
+      demo: "https://eventify-map.vercel.app/",
       // demo: "",
       // stats: {
       //   stars: 145,

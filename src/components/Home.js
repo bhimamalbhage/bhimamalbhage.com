@@ -28,7 +28,7 @@ const Home = () => {
 
           <p className="flex items-center gap-2">
             🧠 Specialised in{" "}
-            <span className="text-red-500">React, Javascript </span>and{" "}
+            <span className="text-red-500">React, Javascript, Python </span>and{" "}
             <span className="text-red-500"> Node.js</span>
           </p>
 
