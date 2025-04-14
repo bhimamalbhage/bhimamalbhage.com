@@ -8,6 +8,7 @@ import Traffic from "../assets/images/traffic.png";
 import ProjectPilot from "../assets/images/project-pilot-ss.png";
 import myfinfolio from '../assets/images/MyFinFolio.png'
 import eventMap from '../assets/images/event-map.png'
+import devVisuals from '../assets/images/dev-visuals.png'
 
 
 const ProjectsPage = () => {
@@ -49,6 +50,22 @@ const ProjectsPage = () => {
       //   forks: 48
       // }
     },
+    {
+      id: "dev-visuals",
+      title: "Dev Visuals - Visualize Programming Concepts for Interviews",
+      description: "An interactive web app that visualizes core programming concepts to help developers learn and revise quickly. Ideal for interview prep, it acts like a visual cheat sheet for key topics.",
+      longDescription: "Dev Visuals is a web application built to simplify technical interview preparation by offering interactive and intuitive visualizations of fundamental programming concepts. From data structures to algorithms and system design basics, each topic is presented with easy-to-understand visuals, making complex topics more accessible. Designed for both beginners and experienced developers, it's a handy resource to revise quickly before interviews.",
+      tags: ["React", "TailwindCSS"],
+      imageUrls: [
+        devVisuals,
+      ],
+      github: "https://github.com/bhimamalbhage/dev-visuals",
+      demo: "https://dev-visuals.vercel.app/",
+      // stats: {
+      //   stars: 145,
+      //   forks: 48
+      // }
+    },    
     {
       id: "my-flix",
       title: "MyFlix - Movie Discovery and Management App",

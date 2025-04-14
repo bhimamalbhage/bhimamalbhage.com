@@ -3,7 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Download, ExternalLink, Briefcase, Search, Mail } from 'lucide-react';
 import profile2 from "../assets/images/profile2.jpg";
 import AiAssistant from "../assets/images/ai-assistant.png";
-import myFlix from "../assets/images/myFlix.png";
+// import myFlix from "../assets/images/myFlix.png";
+import devVisuals from "../assets/images/dev-visuals.png";
 
 const Portfolio = () => {
   const navigate = useNavigate();
@@ -21,18 +22,33 @@ const Portfolio = () => {
       imageUrl: AiAssistant,
       github: "https://github.com/bhimamalbhage/AI-Assistant-for-university",
     },
+    // {
+    //   id: "my-flix",
+    //   title: "MyFlix - Movie Discovery and Management App",
+    //   description:
+    //     "MyFlix is a modern movie discovery and management app inspired by Netflix that allows users to explore, track, and manage their favorite films effortlessly. With an intuitive interface and personalized recommendations, MyFlix enhances the movie-watching experience by providing detailed movie information, and watchlist management.",
+    //   longDescription:
+    //     "MyFlix is an movie discovery and management application designed for cinephiles who want an easy and engaging way to explore and organize their movie preferences. Whether you're searching for the latest blockbusters, classic films, or hidden gems, MyFlix provides a seamless browsing experience with detailed movie descriptions, trailers, ratings, and reviews.",
+    //   tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+    //   imageUrl: myFlix,
+    //   github: "https://github.com/bhimamalbhage/myFlix-client",
+    //   demo: "https://myflix-bhima.netlify.app/",
+    // },
     {
-      id: "my-flix",
-      title: "MyFlix - Movie Discovery and Management App",
-      description:
-        "MyFlix is a modern movie discovery and management app inspired by Netflix that allows users to explore, track, and manage their favorite films effortlessly. With an intuitive interface and personalized recommendations, MyFlix enhances the movie-watching experience by providing detailed movie information, and watchlist management.",
-      longDescription:
-        "MyFlix is an movie discovery and management application designed for cinephiles who want an easy and engaging way to explore and organize their movie preferences. Whether you're searching for the latest blockbusters, classic films, or hidden gems, MyFlix provides a seamless browsing experience with detailed movie descriptions, trailers, ratings, and reviews.",
-      tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-      imageUrl: myFlix,
-      github: "https://github.com/bhimamalbhage/myFlix-client",
-      demo: "https://myflix-bhima.netlify.app/",
-    },
+      id: "dev-visuals",
+      title: "Dev Visuals – Visualize Programming Concepts for Interviews",
+      description: "An interactive web app that visualizes core programming concepts to help developers learn and revise quickly. Ideal for interview prep, it acts like a visual cheat sheet for key topics.",
+      longDescription: "Dev Visuals is a web application built to simplify technical interview preparation by offering interactive and intuitive visualizations of fundamental programming concepts. From data structures to algorithms and system design basics, each topic is presented with easy-to-understand visuals, making complex topics more accessible. Designed for both beginners and experienced developers, it's a handy resource to revise quickly before interviews.",
+      tags: ["React", "TailwindCSS"],
+      imageUrl: devVisuals,
+      github: "https://github.com/bhimamalbhage/dev-visuals",
+      demo: "https://dev-visuals.vercel.app/",
+      // stats: {
+      //   stars: 145,
+      //   forks: 48
+      // }
+    }
+    
   ];
 
   // const handleEmailClick = (e) => {
