@@ -3,14 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 // import animeProfile from "../assets/images/anime-profile.png";
 // import profile1 from "../assets/images/profile1.png";
-import profile2 from "../assets/images/profile2.jpg";
+import profile3 from "../assets/images/profile3.jpg";
 
 const Home = () => {
   return (
           <main className="flex flex-col items-center">
         <div className="mb-8">
           {/* <img src={profile1} alt="Profile" className="w-100 h-80" style={{borderRadius:'10px'}} /> */}
-          <img src={profile2} alt="Profile" className="w-100 h-80" style={{borderRadius:'10px'}} />
+          <img src={profile3} alt="Profile" className="w-100 h-80" style={{borderRadius:'10px'}} />
         </div>
 
         <h1 className="text-4xl font-bold mb-8 flex items-center gap-2">
