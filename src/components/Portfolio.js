@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Download, ExternalLink, Briefcase, Search, Mail } from 'lucide-react';
-import profile2 from "../assets/images/profile2.jpg";
+import profile3 from "../assets/images/profile3.jpg";
 import AiAssistant from "../assets/images/ai-assistant.png";
 // import myFlix from "../assets/images/myFlix.png";
 import devVisuals from "../assets/images/dev-visuals.png";
@@ -61,7 +61,7 @@ const Portfolio = () => {
         <div className="relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
           <img
-            src={profile2}
+            src={profile3}
             alt="Profile"
             className="relative w-48 h-48 rounded-full object-cover"
           />
